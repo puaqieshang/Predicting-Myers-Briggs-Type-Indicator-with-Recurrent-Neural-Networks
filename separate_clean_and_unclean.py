@@ -6,6 +6,8 @@ import numpy as np
 import pandas as pd
 import csv
 
+
+raw_data_path = "/content/gdrive/MyDrive/AI Startup/Models/Myer-Briggs/mbti_1.csv" # Change this
 df = pd.read_csv(raw_data_path)
 
 types = ('ISTJ', 'ISFJ', 'INFJ', 'INTJ', \
