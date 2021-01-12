@@ -41,8 +41,9 @@ def lemmatize(x):
 		lemmatized.append(temp)
 	return np.array(lemmatized)
 
+path = "/content/gdrive/MyDrive/AI Startup/Models/Myer-Briggs/"
 for k in range(len(DIMENSIONS)):
-	model = load_model('model_{}.h5'.format(DIMENSIONS[k]))
+	model = load_model('{}model_{}.h5'.format(path, DIMENSIONS[k]))
 	tokenizer = None
 	with open('tokenizer_{}.pkl'.format(DIMENSIONS[k]), 'rb') as f:
 		tokenizer = pickle.load(f)
